@@ -9,7 +9,7 @@
     tags:
       - StA52Drum556x45mmFMJ
   - type: Item
-    size: Small
+    size: Normal
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
