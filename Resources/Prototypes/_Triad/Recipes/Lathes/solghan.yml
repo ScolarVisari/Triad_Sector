@@ -1,0 +1,12 @@
+- type: latheRecipe # Triad
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleStA52AssaultRifle
+  result: WeaponRifleStA52AssaultRifle
+  categories:
+  - Rifles
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2000
+    Plasteel: 1500
+    Plastic: 200

@@ -203,6 +203,9 @@
   - UllmanWeaponPulseSniper
   - UllmanMeleePlasmaBlade
 #Mono end
+#Triad start
+  - WeaponRifleStA52AssaultRifle
+#Triad end
 
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedEmag

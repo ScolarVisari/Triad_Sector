@@ -56,3 +56,71 @@
   - type: Appearance
  #- type: NFWeaponDetails  # when we get details in from frontier
  #  manufacturer: weapon-details-manufacturer-SESWC-consortium
+ 
+- type: entity
+  name: StA-52 Assault Rifle (5.56x45mm)
+  parent: BaseWeaponRifle
+  id: WeaponRifleStA52AssaultRifle
+  description: A rugged assault rifle commonly found among Solghan remnant warbands. Designed by Stahl Arms.
+  components:
+  - type: Sprite
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/sta52.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -17
+  - type: Gun
+    minAngle: 18
+    maxAngle: 35
+    angleIncrease: 4
+    angleDecay: 40
+    fireRate: 11 # 660 rpm
+    shotsPerBurst: 3
+    availableModes:
+    - Burst
+    - FullAuto
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Goobstation/Weapons/Guns/Gunshots/smartgun_shoot.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: Clothing
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/sta52_inhands_32x.rsi
+  - type: Item
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/sta52_inhands_32x.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: StA52Drum556x45mmFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - StA52Drum556x45mmFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge556x45mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge556x45mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 3500
+    vendPrice: 9000

@@ -8,6 +8,7 @@
   recipeUnlocks:
   - WeaponLMGRatel
   - WeaponShotgunBigBuddy
+  - WeaponRifleStA52AssaultRifle # Triad
   technologyPrerequisites:
   - MercArmementSimple
   - AdvancedParts

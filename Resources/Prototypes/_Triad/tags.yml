@@ -18,3 +18,7 @@
 # Clothing
 - type: Tag
   id: AdvancedTacticalBackpack
+
+#556x45mm
+- type: Tag
+  id: StA52Drum556x45mmFMJ
