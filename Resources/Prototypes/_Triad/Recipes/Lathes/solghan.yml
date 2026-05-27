@@ -1,4 +1,4 @@
-- type: latheRecipe # Triad
+- type: latheRecipe
   parent: BaseWeaponRecipeLong
   id: WeaponRifleStA52AssaultRifle
   result: WeaponRifleStA52AssaultRifle
@@ -10,3 +10,13 @@
     Steel: 2000
     Plasteel: 1500
     Plastic: 200
+    
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateAmmoBoxRecipe
+  id: StA52Drum556x45mmFMJ
+  result: StA52Drum556x45mmFMJ
+  
+- type: latheRecipe
+  parent: BaseAmmoEmptyIntermediateMagazineRecipe
+  id: StA52Drum556x45mmEmpty
+  result: StA52Drum556x45mmEmpty

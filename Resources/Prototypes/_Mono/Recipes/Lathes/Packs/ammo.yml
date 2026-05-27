@@ -637,6 +637,7 @@
   - MagazineAsmgtUniversal9x19mm
   - MagazineAsmgtUniversal762x39mm
   - MagazineAsmgtUniversal556x45mm
+  - StA52Drum556x45mmFMJ #Triad
 
 #SKR
 
@@ -703,6 +704,7 @@
   - Magazine45_ACPSubMachineGunEmpty
   - Magazine45_ACPSubMachineGunTopMountedEmpty
   - Magazine40mmEmpty
+  - StA52Drum556x45mmEmpty #Triad
 
 #Rubber recipes
 
