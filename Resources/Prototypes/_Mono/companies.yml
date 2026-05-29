@@ -267,12 +267,12 @@
 
 # Triad
 - type: company
-  id: SolghanRemnants
+  id: SolghastRemnants
   form: Protagonist
-  name: Solghan Remnants
-  description: solghan-remnants-description
+  name: Solghast Remnants
+  description: solghast-remnants-description
   color: "#930000"
-  image: /Textures/_Triad/Companies/solghanremnants.png
+  image: /Textures/_Triad/Companies/solghastremnants.png
   logins: 
   - BlueRoseClsr
   - Supplicant
