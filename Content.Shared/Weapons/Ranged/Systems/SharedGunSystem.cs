@@ -351,7 +351,27 @@ public abstract partial class SharedGunSystem : EntitySystem
     {
         if (TryComp<AutoShootGunComponent>(gunUid, out var auto) && !auto.CanFire && auto.RemainingTime <= TimeSpan.FromSeconds(0)) // Frontier // Mono
             return; // Frontier
-
+			
+		// Triad start
+		if (TryComp<MagazineAffectsFireRateComponent>(gunUid, out var fireRateComp))
+		{
+			fireRateComp.DefaultFireRate ??= gun.FireRate;
+			gun.FireRate = fireRateComp.DefaultFireRate.Value;
+			if (Containers.TryGetContainer(gunUid, "gun_magazine", out var magContainer) &&
+				magContainer.ContainedEntities.Count > 0)
+			{
+				var mag = magContainer.ContainedEntities[0];
+				if (TryComp<MagazineFireRateModifierComponent>(mag, out var modifier))
+				{
+					gun.FireRate = modifier.FireRateOverride > 0f
+						? modifier.FireRateOverride
+						: gun.FireRate * modifier.FireRateMultiplier;
+				}
+			}
+			RefreshModifiers((gunUid, gun));
+		}
+		// Triad end
+		
         if (gun.FireRateModified <= 0f ||
             !_actionBlockerSystem.CanAttack(user))
         {
