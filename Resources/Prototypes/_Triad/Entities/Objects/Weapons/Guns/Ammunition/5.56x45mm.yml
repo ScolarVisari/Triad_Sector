@@ -1,7 +1,7 @@
 # Empty mag
 - type: entity
   id: BaseStA52Drum556x45mm
-  name: "StA-52 Drum (5.56x45mm FMJ)"
+  name: "StA-52 Helical Magazine (5.56x45mm FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -35,7 +35,7 @@
 # Magazines
 - type: entity
   id: StA52Drum556x45mmFMJ
-  name: "StA-52 Drum (5.56x45mm FMJ)"
+  name: "StA-52 Helical Magazine (5.56x45mm FMJ)"
   parent: BaseStA52Drum556x45mm
   components:
   - type: BallisticAmmoProvider
@@ -49,7 +49,7 @@
 
 - type: entity
   id: StA52Drum556x45mmEmpty
-  name: "StA-52 Drum (5.56x45mm any)"
+  name: "StA-52 Helical Magazine (5.56x45mm any)"
   suffix: empty
   parent: StA52Drum556x45mmFMJ
   components:

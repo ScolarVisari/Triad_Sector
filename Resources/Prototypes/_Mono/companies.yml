@@ -273,6 +273,6 @@
   description: solghast-remnants-description
   color: "#930000"
   image: /Textures/_Triad/Companies/solghastremnants.png
-  logins: 
-  - BlueRoseClsr
-  - Supplicant
+  #logins: 
+  #- BlueRoseClsr
+  #- Supplicant

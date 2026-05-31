@@ -75,7 +75,7 @@
     maxAngle: -17
   - type: Gun
     minAngle: 18
-    maxAngle: 35
+    maxAngle: 40
     angleIncrease: 4
     angleDecay: 40
     fireRate: 11 # 660 rpm
