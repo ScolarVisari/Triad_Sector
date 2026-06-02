@@ -61,7 +61,7 @@
   name: StA-52 Assault Rifle (5.56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRifleStA52AssaultRifle
-  description: A rugged assault rifle commonly found among Solghan remnant warbands. Designed by Stahl Arms.
+  description: A rugged assault rifle commonly found among Solghast remnant warbands. Designed by Stahl Arms.
   components:
   - type: Sprite
     sprite: _Triad/Objects/Weapons/Guns/Rifles/sta52.rsi
