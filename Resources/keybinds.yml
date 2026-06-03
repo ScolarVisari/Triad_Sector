@@ -626,3 +626,11 @@ binds:
   key: X
   mod1: Shift
 # endregion Frontier
+# Triad start
+- function: RMCPickUpDroppedItems
+  type: State
+  key: R
+- function: RMCInteractWithOtherHand
+  type: State
+  key: C
+# Triad end

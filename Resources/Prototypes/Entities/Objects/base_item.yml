@@ -58,6 +58,7 @@
     noRot: false
   - type: Pullable
   - type: DamageExaminable
+  - type: RMCItemPickup # Triad
 
 - type: entity
   name: "storage item"

@@ -235,6 +235,7 @@
   # Mono
   - type: ShipNpcTarget
     needGrid: NoGrid
+  - type: RMCPickupDroppedItems # Triad
 
 - type: entity
   save: false
